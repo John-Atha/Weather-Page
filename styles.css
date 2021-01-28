@@ -1,0 +1,243 @@
+@keyframes block_appearing{
+
+    0%{
+        opacity: 0%;
+        display: block;
+    }
+    40%{
+        opacity: 20%;
+    }
+    50%{
+        opacity: 40%;
+    }
+    60%{
+        opacity: 60%;
+    }
+    80%{
+        opacity: 80%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+@keyframes grid_appearing{
+    0%{
+        display: grid;
+        opacity: 10%;
+    }
+    30%{
+        opacity: 40%;
+    }
+    60%{
+        opacity: 60%;
+    }
+    90%{
+        opacity: 80%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+
+
+
+
+body {
+    background-image: url("static/lucas-carl-PQfuavIwNGM-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    /*display: grid;
+    grid-template-columns: 10% auto;
+    grid-template-rows: auto;*/
+}
+
+#mainNav {
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+}
+
+.nav-link {
+    font-size: large;
+    color:rgb(255, 255, 255);
+    margin-left: 5%;
+    width: auto;
+}
+
+.nav-link:hover {
+    font-weight: bold;
+    color: white;
+}
+
+#main {
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    justify-items: center;
+    margin: auto;
+    margin-top: 5vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 25% auto;
+    /*align-content: center;*/
+       
+    text-align: center;
+
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+}
+
+
+#main>div {
+    margin: 5%;
+    margin-right: 0%;
+    margin-left: 0%;
+}
+
+#nested-title {
+    font-size: 300%;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#initial-choice {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    animation:
+     block_appearing 0.5s;
+    text-align: center;
+}
+
+#initial-question {
+    margin-bottom: 2%;
+}
+
+#choose-map, #choose-manual {
+    background-color: rgb(6, 135, 163);
+    color: rgb(253, 253, 253);
+    padding:2%;
+    border-radius:5px;
+    margin-right: 3%;
+}
+
+
+#city {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+#country {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
+
+}
+
+#location-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+.location-pick {
+    animation:
+     block_appearing 1s;
+    margin-bottom: 1%
+}
+
+.location-form {
+    display: grid;
+    grid-template-columns: 40% 30%;
+    column-gap: 0%;
+}
+
+.location-label {
+    grid-column-start: 1;
+    margin-left:0%;
+}
+
+.location-select {
+    grid-column-start: 2;
+    background-color:rgb(6, 135, 163);
+    color: rgb(253, 253, 253);
+    padding:2%;
+    border-radius:5px;
+    width:min-content;
+}
+
+
+#results {
+    grid-row-start: 3;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+}
+
+#result-column-1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+
+}
+
+#results-list {
+    background-color: rgb(6, 135, 163);
+    border-radius: 10px;
+    margin-left:10%;
+    margin-bottom:10%;
+    margin-top:0%;
+    padding:5%;
+    animation:
+        block_appearing 1s;
+    width: 90%;
+    height: 100%;
+}
+
+#result-column-2 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+#weather-img {
+
+    width:12vw;
+
+
+}
+#about-us {
+    animation:
+     block_appearing 1s;
+    margin-top: 0%;
+    grid-row: 2;
+}
+
+#api-license {
+    color: black;
+    font-weight: bold;
+    font-size: large;
+}
+
+#api-license:hover {
+    font-size: larger;
+}
+
+#not-ready-yet {
+    display: block;
+    grid-row: 2;
+    font-size: large;
+    animation:
+        block_appearing 1s;
+}
