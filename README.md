@@ -9,3 +9,5 @@
 
 - - -
 Developer: Giannis Athanasiou
+GitHub Username: John-Atha
+Email: giannisj3@gmai.com
