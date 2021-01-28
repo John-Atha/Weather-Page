@@ -8,6 +8,6 @@
 * Key should be copied into the <i>dynamic.js</i> file, line 59.
 
 - - -
-Developer: Giannis Athanasiou
-GitHub Username: John-Atha
-Email: giannisj3@gmai.com
+- Developer: Giannis Athanasiou
+- GitHub Username: John-Atha
+- Email: giannisj3@gmai.com
