@@ -1,6 +1,7 @@
 ## Weather page project
 
 * This educational project contains a web page with weather forecast information for several cities across the world.
+* Is is a single-page project.
 * Languages used: Javascript, HTML, CSS.
 * The repo contains the front-end part.
 * Data are retrieved from <b>Open Weather Map</b> api, at: https://openweathermap.org/.
