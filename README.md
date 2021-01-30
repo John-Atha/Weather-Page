@@ -5,6 +5,7 @@
 * Languages used: Javascript, HTML, CSS.
 * The repo contains the front-end part.
 * Data are retrieved from <b>Open Weather Map</b> api, at: https://openweathermap.org/.
+* Background image taken from https://unsplash.com/wallpapers/nature/sky.
 * Current code is not working, as data cannot be retrieved without a key for the api.
 * Key should be copied into the <i>dynamic.js</i> file, line 59.
 
